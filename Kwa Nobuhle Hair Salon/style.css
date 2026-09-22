@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.top-bar {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+header {
+    text-align: center;
+    padding: 25px 0 15px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+
+.logo span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #a37e58;
+}
+
+.hero {
+    background: url('images/installation.jpg') center/cover no-repeat;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #ffffff;
+    color: #000000;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #a37e58;
+    color: #ffffff;
+}
+
+.btn-outline {
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.ticker-bar {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.intro small {
+    letter-spacing: 3px;
+    color: #888;
+    font-size: 11px;
+}
+
+.intro h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.intro p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.featured-services {
+    padding: 40px 5%;
+    text-align: center;
+    background: #fafafa;
+}
+
+.featured-services h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.subtext {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    letter-spacing: 1px;
+}
+
+.card-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+}
+
+.page-title {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+}
+
+.page-title h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.page-title p {
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.services-container {
+    padding: 30px 5% 60px 5%;
+}
+
+.service-card .service-desc {
+    font-size: 12px;
+    color: #666;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a37e58;
+    margin: 12px 0;
+}
+
+.btn-book {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #a37e58;
+}
+
+.gallery-container {
+    padding: 30px 5% 60px 5%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+.contact-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 5%;
+    background-color: #fffafb;
+}
+
+.schedule-card {
+    background-color: #fdf0f3;
+    padding: 40px 30px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sparkle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.schedule-card h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.schedule-card .subtitle {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dotted #d8b8bf;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.schedule-list .day {
+    font-weight: bold;
+}
+
+.schedule-list .slots {
+    color: #333;
+}
+
+.schedule-list .closed .slots {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.booking-form-section {
+    background: #ffffff;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #eee;
+}
+
+.booking-form-section h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.booking-form-section .btn {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #eaeaea;
+    font-size: 12px;
+    color: #777;
+}

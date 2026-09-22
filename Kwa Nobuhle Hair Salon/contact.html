@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwa Nobuhle Hair Salon | Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>KWA NOBUHLE</h1>
+            <span>HAIR SALON</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+
+        <section class="schedule-card">
+            <div class="sparkle">✦</div>
+            <h2>BOOK YOUR APPOINTMENT</h2>
+            <p class="subtitle">for this week</p>
+
+            <ul class="schedule-list">
+                <li>
+                    <span class="day">MONDAY</span>
+                    <span class="slots">10 AM / 2 PM / 5 PM</span>
+                </li>
+                <li>
+                    <span class="day">TUESDAY</span>
+                    <span class="slots">9 AM / 3 PM / 4 PM</span>
+                </li>
+                <li>
+                    <span class="day">WEDNESDAY</span>
+                    <span class="slots">1 PM / 4 PM</span>
+                </li>
+                <li>
+                    <span class="day">THURSDAY</span>
+                    <span class="slots">9 AM / 3 PM / 4 PM</span>
+                </li>
+                <li>
+                    <span class="day">FRIDAY</span>
+                    <span class="slots">1 PM / 4 PM</span>
+                </li>
+                <li>
+                    <span class="day">SATURDAY</span>
+                    <span class="slots">9 AM / 3 PM / 4 PM</span>
+                </li>
+                <li class="closed">
+                    <span class="day">SUNDAY</span>
+                    <span class="slots">CLOSED</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="booking-form-section">
+            <h3>RESERVE YOUR SLOT</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Choose a Service --</option>
+                        <option value="installation">Full Wig Installation (R550)</option>
+                        <option value="braids">Knotless & Box Braids (R450)</option>
+                        <option value="cornrows">Cornrows & Straight Backs (R300)</option>
+                        <option value="nails">Manicure & Pedicure (R350)</option>
+                        <option value="lashes">Eyelash Extensions (R280)</option>
+                        <option value="wash">Hair Wash & Deep Treatment (R200)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="day">Preferred Day</label>
+                    <select id="day" name="day" required>
+                        <option value="">-- Select Day --</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">CONFIRM BOOKING</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kwa Nobuhle Hair Salon. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
